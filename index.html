@@ -9,35 +9,36 @@
 <body>
 <div id=calc>
     <div>
-        <input readonly id="result" type="text" value="0">
+        <input id="result" type="text" class=display value="0">
     </div>
     <div>
-        <button onclick="num_click(this.innerHTML)">7</button>
-        <button onclick="num_click(this.innerHTML)">8</button>
-        <button onclick="num_click(this.innerHTML)">9</button>
-        <button onclick="ope_click(this.innerHTML)">÷</button>
+        <input type="button" value="7" onclick="num_click(7)">
+        <input type="button" value="8" onclick="num_click(8)">
+        <input type="button" value="9" onclick="num_click(9)">
+        <input type="button" value="/" onclick="ope_click('/')">
+        
     </div>
     <div>
-        <button onclick="num_click(this.innerHTML)">4</button>
-        <button onclick="num_click(this.innerHTML)">5</button>
-        <button onclick="num_click(this.innerHTML)">6</button>
-        <button onclick="ope_click(this.innerHTML)">×</button>
+        <input type="button" value="4" onclick="num_click(4)">
+        <input type="button" value="5" onclick="num_click(5)">
+        <input type="button" value="6" onclick="num_click(6)">
+        <input type="button" value="*" onclick="ope_click('*')">
     </div>
     <div>
-        <button onclick="num_click(this.innerHTML)">1</button>
-        <button onclick="num_click(this.innerHTML)">2</button>
-        <button onclick="num_click(this.innerHTML)">3</button>
-        <button onclick="ope_click(this.innerHTML)">-</button>
+        <input type="button" value="1" onclick="num_click(1)">
+        <input type="button" value="2" onclick="num_click(2)">
+        <input type="button" value="3" onclick="num_click(3)">
+        <input type="button" value="-" onclick="ope_click('-')">
     </div>
     <div>
-        <button onclick="num_click(this.innerHTML)">0</button>
-        <button onclick="num_click(this.innerHTML)">00</button>
-        <button onclick="num_click(this.innerHTML)">.</button>
-        <button onclick="ope_click(this.innerHTML)">+</button>
+        <input type="button" value="0" onclick="num_click(0)">
+        <input type="button" value="00" onclick="num_click(00)">
+        <input type="button" value="." onclick="num_click('.')">
+        <input type="button" value="+" onclick="ope_click('+')">
     </div>
        <div>
-        <button onclick="c_click()">AC</button>
-        <button onclick="equal_click()">=</button>
+        <input type="button" value="AC" class="clear" onclick="c_click()">
+        <input type="button" value="=" class="equal" onclick="equal_click()">
     </div>
 </div>
     <script src="main2.js"></script>
